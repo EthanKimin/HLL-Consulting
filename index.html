@@ -6,6 +6,9 @@
         <title>HLL Consulting :: introduce</title>
         <link rel="icon" href="1.jpg" type="image/x-icon">
         <style>
+            * {
+                font-family:sans-serif;
+            }
             .introduce {
                 position: fixed;
                 display: flex;
@@ -15,18 +18,27 @@
                 background-color: white;
             }
             .thema {
-                flex-grow: 1; 
+                flex-grow: 5; 
+                display: flex;
+                font-size: 1.3rem;
+            }
+            .themasel {
+                flex-grow: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 1.3rem;
             }
-            .thema:hover {
+            .themasel:hover {
                 background-color: whitesmoke;
             }
             .title {
                 margin-right: 30px;
                 margin-left: 20px;
+            }
+            .language {
+                position:relative;
+                top: 10px;
+                right: 10px;
             }
             a {
                 color:black; 
@@ -47,22 +59,25 @@
             #catchphrase {
                 height: 700px;
                 font-size: 5rem;
+                background-color: #01509f;
                 background-image: url('sky.jpg');
                 background-size: cover;
+                transition-property: all;
+                transition-duration: 0.3s;
                 padding-right: 10rem;
                 padding-top: 5rem;
                 text-align: end;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
             #catchphrase p {
                 display:inline;
                 /* margin: 1rem; */
                 color:cornsilk;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
             h2 {
                 padding-top: 6rem;
                 font-size:2.5rem;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-weight: 100;
                 letter-spacing: 0.049em;
                 line-height: 1.2;
@@ -80,13 +95,19 @@
             .top svg {
                 width:0.8rem;height:0.8rem;
             }
-            @media (max-width:800px) {
+            @media (max-width:950px) {
                 #catchphrase {
                     font-size: 3rem;
                     padding-right: 1rem;
                 }
+                .introduce {
+                    display: block;
+                }
                 h2{
                     padding-top: 8rem;
+                }
+                .language {
+                    position: absolute;
                 }
             }
             @media (max-width:700px) {
@@ -110,11 +131,14 @@
     <body>
         <header class=introduce>
             <div class=title><h1><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M6.3,13.262a1.155,1.155,0,0,0,1.4,0l4.209-2.94-1.3-6.732a.288.288,0,0,0-.2-.192.285.285,0,0,0-.271.072L2.089,10.322Z"/><path class="a" d="M2.089,10.322l4.64-8.231a.289.289,0,0,1,.511.016l1.3,2.719"/><path class="a" d="M2.089,10.322,2.819.74A.289.289,0,0,1,3.355.646L5.822,3.7Z"/></svg>HLL Consulting</a></h1></div>
-            <div class=thema><a href="#about">About/</a></div>
-            <div class=thema><a href="#business">Business/</a></div>
-            <div class=thema><a href="#employees">Employees/</a></div>
-            <div class=thema><a href="#responsibility">Responsibility/</a></div>
-            <div class=thema><a href="#media">Media/</a></div>
+            <div class=thema>
+                <div class="themasel"><a href="#about">About</a></div>
+                <div class="themasel"><a href="#business">Business</a></div>
+                <div class="themasel"><a href="#employees">Employees</a></div>
+                <div class="themasel"><a href="#responsibility">Responsibility</a></div>
+                <div class="themasel"><a href="#media">Media</a></div>
+            </div>
+            <div class=language><a href="">中</a>/<a href="">En</a>/<a href="">한</a></div>
         </header>
         <article>
             <div id="catchphrase">
