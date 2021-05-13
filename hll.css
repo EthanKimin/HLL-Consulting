@@ -7,8 +7,9 @@
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(255, 255, 255,0.7);
-    background-blend-mode: color;
+    background-color: rgba(255, 255, 255,0.6);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 .thema {
     flex-grow: 5; 
@@ -76,6 +77,9 @@ h2 {
     line-height: 1.2;
     border-left: darkblue 10px solid;
     padding-left: 0.5rem;
+}
+p{
+    margin: 0.8rem;
 }
 footer {
     text-align: center;
