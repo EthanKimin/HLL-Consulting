@@ -23,8 +23,12 @@
     align-items: center;
     justify-content: center;
 }
-.themasel:hover {
+.thema a:hover {
     background-color: whitesmoke;
+}
+.selection {
+    height: 100%;
+    width: 100%;
 }
 .title {
     margin-right: 30px;
@@ -53,6 +57,21 @@ svg{
     width: 40px;
     height: 40px;
 }
+h2 {
+    margin-top: 5rem;
+    padding-top: 5.5rem;
+    font-size:2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.049em;
+    line-height: 1.2;
+    border-left: darkblue 10px solid;
+    padding-left: 0.5rem;
+}
+p{
+    margin: 0.8rem;
+    text-align: center;
+}
 #catchphrase {
     height: 700px;
     font-size: 5rem;
@@ -64,23 +83,64 @@ svg{
     padding-top: 9rem;
     text-align: end;
 }
-#catchphrase p {
+#catchphrase p, .content .highlight {
     display:inline;
     color:cornsilk;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h2 {
-    padding-top: 6rem;
-    font-size:2.5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    letter-spacing: 0.049em;
-    line-height: 1.2;
-    border-left: darkblue 10px solid;
-    padding-left: 0.5rem;
+.highlight {
+    font-size: 2rem;
+    /* margin: 50px; */
 }
-p{
-    margin: 0.8rem;
+.normal {
+    font-size: 1.5rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+#about .content {
+    background-image: url("choice2.jpg");
+    background-size: cover;
+    height: 700px;
+    padding: 10rem;
+    padding-right: 40%;
+}
+.content .normal {
+    color: blanchedalmond;
+}
+#about img {
+    width: 100%;
+}
+#businesscontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#business .content {
+    width: 39%;
+    height: 700px;
+    margin: 3rem;
+    margin-top: 0;
+    background-size: cover;
+    background-color: rgba(50, 50, 50,0.5);
+    background-blend-mode: darken;
+}
+#firstbusiness {
+    background-image: url(hr.jpg);
+    margin-right: 0%;
+}
+#secondbusiness {
+    background-image: url(study2.jpg);
+    margin-left: 0%;
+}
+#thirdbusiness {
+    background-image: url(life.jpg);
+    margin-right: 0%;
+}
+#forthbusiness {
+    background-image: url(child.jpg);
+    margin-left: 0%;
 }
 footer {
     text-align: center;
@@ -88,9 +148,12 @@ footer {
 }
 .top {
     display: block;
-    text-align: end;
+    text-align: right;
+    right: 1rem;
+    bottom: 1rem;
+    margin: 1rem;
 }
-.top svg {
+.top a svg {
     width:0.8rem;height:0.8rem;
 }
 @media (max-width:950px) {
@@ -104,10 +167,19 @@ footer {
         display: block;
     }
     h2{
-        padding-top: 8rem;
+        padding-top: 7.5rem;
     }
     .language {
         position: absolute;
+    }
+    .content {
+        flex-direction: column;
+    }
+    #about .content {
+        padding-right: 8rem;
+    }
+    #business .content {
+        width: 100%;
     }
 }
 @media (max-width:700px) {
@@ -124,5 +196,8 @@ footer {
     #catchphrase {
         font-size: 2rem;
         padding-right: 0.5rem;
+    }
+    #about .content {
+        padding: 2rem;
     }
 }
