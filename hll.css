@@ -128,19 +128,15 @@ p{
 }
 #firstbusiness {
     background-image: url(hr.jpg);
-    margin-right: 0%;
 }
 #secondbusiness {
     background-image: url(study2.jpg);
-    margin-left: 0%;
 }
 #thirdbusiness {
     background-image: url(life.jpg);
-    margin-right: 0%;
 }
 #forthbusiness {
     background-image: url(child.jpg);
-    margin-left: 0%;
 }
 footer {
     text-align: center;
