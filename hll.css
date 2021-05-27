@@ -81,13 +81,12 @@ p{
 }
 #catchphrase {
     padding: 10rem;
+    padding-right: 25rem;
     padding-top: 15rem;
     font-size: 2rem;
     background-image: url('table.jpg');
     background-size: cover;
     background-position: bottom right;
-    /* background-blend-mode: luminosity; */
-    /* text-align: end; */
 }
 #catchphrase h1 {
     font-size: 4rem;
@@ -101,7 +100,6 @@ p{
 }
 #catchphrase p a {
     color: royalblue;
-    
 }
 .highlight {
     font-size: 2rem;
@@ -173,7 +171,7 @@ footer {
         padding-top: 12rem;
         padding-left: 2rem;
         padding-right: 2rem;
-        background-position: right;
+        padding-bottom: 15rem;
     }
     #catchphrase h1 {
         font-size: 2rem;
