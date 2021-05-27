@@ -6,23 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scala=1.0">
         <title>HLL Consulting :: introduce</title>
         <link rel="icon" href="hll.ico"/>
+        <link rel="stylesheet" href="css/fontello.css">
         <link rel="stylesheet" href="hll.css">
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-              } else {
-                document.getElementById("navbar").style.top = "-120px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-        </script>
+        <script src="hll.js"></script>
     </head>
     <body>
         <header class=introduce id=navbar>
             <div class=title><h1><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M6.3,13.262a1.155,1.155,0,0,0,1.4,0l4.209-2.94-1.3-6.732a.288.288,0,0,0-.2-.192.285.285,0,0,0-.271.072L2.089,10.322Z"/><path class="a" d="M2.089,10.322l4.64-8.231a.289.289,0,0,1,.511.016l1.3,2.719"/><path class="a" d="M2.089,10.322,2.819.74A.289.289,0,0,1,3.355.646L5.822,3.7Z"/></svg>HLL Consulting</a></h1></div>
+            <div class=menu><input style="font-family: 'fontello'; font-size: 1.5rem; color: rgb(100,100,100);" type="image" value="&#xf0c9" mode="navclose" onclick="if(this.mode === 'navopen'){this.value='&#xf0c9'; this.mode='navclose'; navOpenClose(this);}else{this.value='&#xe800'; this.mode='navopen'; navOpenClose(this);}
+            "></div>
             <div class=thema>
                 <a class="themasel" href="#about"><div><span class="selection">About</span></div></a>
                 <a class="themasel" href="#business"><div><span class="selection">Business</span></div></a>
@@ -30,12 +22,11 @@
                 <a class="themasel" href="#responsibility"><div><span class="selection">Responsibility</span></div></a>
                 <a class="themasel" href="#media"><div><span class="selection">Media</span></div></a>
             </div>
-            <div class=language><a href="">中</a>/<a href="">En</a>/<a href="">한</a></div>
         </header>
         <article>
             <div id="catchphrase">
-                <p>HLL Consulting:</p><br>
-                <p>Your Best Choice!</p>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, iste esse nihil animi molestias qui. Molestiae tenetur vitae iusto placeat magnam, odio molestias, in natus animi sit minima est. <a href="#about">Learn More</a></p>
             </div>
             <div id="about">
                 <h2>About Us</h2>
@@ -50,7 +41,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="top"><a href="">Go to the Top<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>interface-arrows-button-up-double</title><path class="a" d="M.5,7.543,6.646,1.4a.5.5,0,0,1,.708,0L13.5,7.543"/><path class="a" d="M.5,12.75,6.646,6.6a.5.5,0,0,1,.708,0L13.5,12.75"/></svg></a></div>
+                <div class="top"><a href="">Go to the Top<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>interface-arrows-up</title><line class="a" x1="7" y1="13.5" x2="7" y2="0.5"/><polyline class="a" points="10.5 4 7 0.5 3.5 4"/></svg></a></div>
             </div>
             <div id="business">
                 <h2>Business</h2>
@@ -83,7 +74,7 @@
                         </p>
                     </div>
                 </div>                
-                <div class="top"><a href="">Go to the Top<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>interface-arrows-button-up-double</title><path class="a" d="M.5,7.543,6.646,1.4a.5.5,0,0,1,.708,0L13.5,7.543"/><path class="a" d="M.5,12.75,6.646,6.6a.5.5,0,0,1,.708,0L13.5,12.75"/></svg></a></div>
+                <div class="top"><a href="">Go to the Top<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><defs><style>.a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>interface-arrows-up</title><line class="a" x1="7" y1="13.5" x2="7" y2="0.5"/><polyline class="a" points="10.5 4 7 0.5 3.5 4"/></svg></a></div>
             </div>
             <div id="employees">
                 <h2>Employees</h2>
@@ -99,8 +90,7 @@
             </div>
         </article>
         <footer>
-            <div class="copyright">Copyright © 2021 HLL Consulting Ltd. All Rights Reserved. <br>北京浩朗兰教育咨询有限公司版权所有</div>
+            <div class="copyright">Copyright © 2021 Beijing HLL Consulting Ltd. All Rights Reserved. <br>北京浩朗兰教育咨询有限公司版权所有</div>
         </footer>
-
     </body>
 </html>
