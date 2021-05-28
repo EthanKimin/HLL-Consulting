@@ -3,239 +3,123 @@
     font-family: 'Raleway', sans-serif;
     color: rgb(30,30,30);
 }
-.introduce {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-image: url(table.jpg);
-    background-position: top;
-    z-index: 999;
-    padding: 1.3rem;
-}
-.thema {
-    flex-grow: 5; 
-    display: flex;
-    font-size: 1rem;
-}
-.themasel {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.thema a:hover {
-    background-color: whitesmoke;
-    /* 밑줄 그어지는 것으로 바꾸기 */
-}
-.selection {
-    height: 100%;
-    width: 100%;
-}
-.title {
-    padding-right: 8rem;
-    margin-left: 2rem;
-}
-h1 {
-    margin: 0;
-    font-weight: 500;
-}
-.menu { 
-    display: none;
-    position:relative;
-    top: 0.5rem;
-    right: 0.5rem;
-    margin: 0.5rem;
-    margin-top: 0;
-}
-a {
-    color: rgb(30,30,30); 
-    text-decoration: none;
-}
-a:active {
-    transform: translate(0.05rem,0.05rem);
-    transition-property: all;
-    transition-duration: 0.1s;
-}
 body {
     margin: 0;
 }
-svg{
+a {
+    text-decoration: none;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(table.jpg);
+    background-position: top right;
+    padding: 0.5rem 1.3rem;
+    align-items: center;
+}
+.title svg{
     width: 2rem;
     height: 2rem;
 }
-h2 {
-    margin-top: 5rem;
-    padding-top: 5.5rem;
-    font-size:2.5rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;    
-    border-left: darkblue 10px solid;
-    padding-left: 0.5rem;
+.title{
+    font-weight: 500;
 }
-p{
-    margin: 0.8rem;
-    text-align: center;
+.navtoggle{
+    display: none;
 }
-#catchphrase {
+.navmenu {
+    display: flex;
+    font-size: 1.2rem;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.navsel {
+    padding: 0.5rem 1rem;
+}
+
+
+
+.frontpage{
     padding: 10rem;
-    padding-right: 25rem;
-    padding-top: 15rem;
     font-size: 2rem;
     background-image: url('table.jpg');
     background-size: cover;
     background-position: bottom right;
 }
-#catchphrase h1 {
+.frontpage h3{
     font-size: 4rem;
     margin-bottom: 4rem;
 }
-#catchphrase p, .content .highlight {
-    display:inline;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+.frontpage p{
     padding-right: 20rem;
 }
-#catchphrase p a {
+.frontpage a{
     color: royalblue;
 }
-.highlight {
-    font-size: 2rem;
-    /* margin: 50px; */
+.frontpage a:hover{
+    text-decoration: underline;
 }
-.normal {
-    font-size: 1.5rem;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-}
-#about .content {
-    background-image: url("choice2.jpg");
-    background-size: cover;
-    height: 700px;
-    padding: 10rem;
-    padding-right: 40%;
-}
-.content .normal {
-    color: blanchedalmond;
-}
-#about img {
-    width: 100%;
-}
-#businesscontent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-#business .content {
-    width: 39%;
-    height: 700px;
-    margin: 3rem;
-    margin-top: 0;
-    background-size: cover;
-    background-color: rgba(50, 50, 50,0.5);
-    background-blend-mode: darken;
-}
-#firstbusiness {
-    background-image: url(hr.jpg);
-}
-#secondbusiness {
-    background-image: url(study2.jpg);
-}
-#thirdbusiness {
-    background-image: url(life.jpg);
-}
-#forthbusiness {
-    background-image: url(child.jpg);
-}
-footer {
+
+
+footer{
     text-align: center;
-    margin: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: silver;
 }
-.top {
-    display: block;
-    text-align: right;
-    right: 1rem;
-    bottom: 1rem;
-    margin: 1rem;
-}
-.top a svg {
-    width:0.8rem;height:0.8rem;
-}
-@media (max-width:1020px) {
-    #catchphrase {
-        font-size: 1.5rem;
-        padding-top: 12rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 15rem;
-    }
-    #catchphrase h1 {
+
+
+
+@media (max-width:1000px) {
+    .navtoggle{
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.7rem;
         font-size: 2rem;
     }
-    .menu {
-        display: flex;
-        position: absolute;
-        right:1rem;
-        top: 1.5rem;
-    }
-    .introduce {
-        display: block;
-    }
     .title{
-        padding-right: 0;
-        margin-left: 0;
+        padding-right: 3rem;
     }
-    .thema {
+    #navbar{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .navmenu{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
         display: none;
     }
-    .themasel {
-        padding: 1rem;
+    .navmenu.active{
+        display: flex;
     }
-    h2{
-        padding-top: 7.5rem;
+    .frontpage{
+        padding: 10rem 5rem 15rem 5rem;
+        font-size: 1.5rem;
     }
-    .content {
-        flex-direction: column;
+    .frontpage h3{
+        font-size: 2rem;
     }
-    #about .content {
-        padding-right: 8rem;
-    }
-    #business .content {
-        width: 100%;
+    .frontpage p{
+        padding-right: 5rem;
     }
 }
 @media (max-width:700px) {
-    .introduce{
-        align-items: flex-end;
+    .frontpage{
+        padding: 12rem 1rem 20rem 1rem;
     }
-    .thema{
-        flex-wrap: wrap;
-    }
-    #catchphrase {
-        font-size: 1rem;
-        padding-left: 1rem;
-    }
-    #catchphrase p {
-        padding-right: 15rem;
-    }
-    #about .content {
-        padding: 2rem;
-    }
-    #business .content{
-        margin: 0.5rem;
-    }
-}
-@media (max-width:500px) {
-    #catchphrase {
-        padding: 1rem;
-        padding-top: 15rem;
-        padding-bottom: 20rem;
-    }
-    #catchphrase p {
-        padding: 1rem;
+    .frontpage p{
+        padding-right: 1rem;
     }
 }
