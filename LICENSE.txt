@@ -1,6 +1,15 @@
 Font license info
 
 
+## Font Awesome
+
+   Copyright (C) 2016 by Dave Gandy
+
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
+
+
 ## Web Symbols
 
    Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
@@ -10,12 +19,12 @@ Font license info
    Homepage:  http://www.justbenicestudio.com/
 
 
-## Font Awesome
+## Brandico
 
-   Copyright (C) 2016 by Dave Gandy
+   (C) 2012 by Vitaly Puzrin
 
-   Author:    Dave Gandy
-   License:   SIL ()
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
+   Author:    Crowdsourced, for Fontello project
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  
 
 
