@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;700&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(70,70,70);
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+#navbar, #frontpage{
+    background-image: url(table.jpg);
+    background-color: rgba(200,200,200,0.4);
+    background-blend-mode: multiply;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-position: top right;
+    padding: 0.5rem 1.3rem;
+    align-items: center;
+}
+#logo img{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2.2rem;
+    padding-right: 12.5rem;
+}
+#logo img:hover{
+    transform: scale(1.1);
+    transform-origin: 0 50% 0;
+    transition-duration: 0.5s;
+}
+.title #hll{
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-left: 3rem;
+}
+.navtoggle{
+    display: none;
+}
+.navmenu {
+    display: flex;
+    font-size: 1.1rem;
+}
+.navsel a{
+    padding: 0.2rem;
+    border-bottom: transparent 0.15rem solid;
+    border-radius: 2px;
+}
+.navsel a:hover, .navsel a:focus{
+    border-bottom: royalblue 0.15rem solid;
+    transition: 0.8s;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.navsel {
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+#frontpage{
+    padding: 13rem;
+    background-size: cover;
+    background-position: bottom right;
+}
+h2{
+    padding-top: 7rem;
+    padding-right: 3rem;
+    text-align: end;
+}
+h3{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+#frontpage p{
+    padding-right: 20rem;
+    /* font-weight: 300; */
+}
+#frontpage a{
+    color: royalblue;
+}
+#frontpage a:hover{
+    text-decoration: underline;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 51, 51);
+}
+.copyright p, .brand, .adress, .email, .others, footer i{
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+i{
+    padding-left: 0rem;
+}
+.brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.adress, .email{
+    font-weight: 500;
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.copyright p{
+    font-size: 0.8rem;
+}
+.icon-github-circled{
+    padding-left: 2rem;
+}
+
+
+
+@media (max-width:1000px) {
+    .navtoggle{
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 1rem;
+        font-size: 1.5rem;
+    }
+    .title{
+        padding-right: 3rem;
+        margin: 0.5rem 0rem;
+    }
+    #logo img{
+        top: 0.8rem;
+        left: 1.2rem;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: baseline;
+        padding: 0rem 0.5rem;
+    }
+    .navmenu{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0.5rem;
+    }
+    .navmenu.active{
+        display: flex;
+    }
+
+    #frontpage{
+        padding: 10rem 5rem 15rem 5rem;
+    }
+    h2{
+        padding-top: 7rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #frontpage p{
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width:700px) {
+    #frontpage{
+        padding: 12rem 1rem 20rem 1rem;
+    }
+    #frontpage p{
+        padding-right: 1rem;
+    }
+    h2{
+        padding-top: 10rem;
+    }
+}
