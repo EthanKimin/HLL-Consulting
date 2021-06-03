@@ -28,3 +28,10 @@ function scrollChange() {
 }
 window.onscroll = scrollChange;
 
+function openLangMenu(){
+    document.querySelector('#lang-menu ul').style.display='block'
+}
+function closeLangMenu(){
+    document.querySelector('#lang-menu ul').style.display='none'
+}
+window.onscroll = closeLangMenu
