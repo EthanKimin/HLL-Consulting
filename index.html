@@ -11,39 +11,39 @@
     <script src="hll.js"></script>
 </head>
 <body>
-    <header id="navbar">
-        <h1 class="title">
-            <a href="">
-                <span id="logo">
-                    <img src="hll.svg" alt="">
-                </span>
-                <span id="hll">HLL Consulting</span>                
+    <div class="pagecontainer">
+        <header id="navbar">
+            <h1 class="title">
+                <a href="">
+                    <span id="logo">
+                        <img src="hll.svg" alt="">
+                    </span>
+                    <span id="hll">HLL Consulting</span>                
+                </a>
+            </h1>
+            <a class="navtoggle" style="font-family: 'fontello';" href="javascript:void(0)" mode="navclose" onclick="if(this.mode==='navopen'){this.mode = 'navclose'; navOpenClose(this)}else{this.mode = 'navopen'; navOpenClose(this)}">
+                <i class="icon-menu"></i>
             </a>
-        </h1>
-        <a class="navtoggle" style="font-family: 'fontello';" href="javascript:void(0)" mode="navclose" onclick="if(this.mode==='navopen'){this.mode = 'navclose'; navOpenClose(this)}else{this.mode = 'navopen'; navOpenClose(this)}">
-            <i class="icon-menu"></i>
-        </a>
-        
-        <ul class=navmenu>
-            <li class="navsel"><a href="#frontpage">Home</a></li>
-            <li class="navsel"><a href="#chapter1">Company Introduction</a></li>
-            <li class="navsel"><a href="#chapter2">Our Service</a></li>
-            <li class="navsel"><a href="#chapter3">Contact Us</a></li>
-            <li class="navsel">
-                <div id="lang-menu">
-                    <div class="selected-lang" id="english">
-                        English
+            
+            <ul class=navmenu>
+                <li class="navsel"><a href="#frontpage">Home</a></li>
+                <li class="navsel"><a href="#chapter1">Company Introduction</a></li>
+                <li class="navsel"><a href="#chapter2">Our Service</a></li>
+                <li class="navsel"><a href="#chapter3">Contact Us</a></li>
+                <li class="navsel">
+                    <div id="lang-menu">
+                        <div class="selected-lang" id="english">
+                            English
+                        </div>
+                        <ul>
+                            <li><a id="english" href="index.html">English</a></li>
+                            <li><a id="korean" href="index_ko.html">Korean</a></li>
+                            <li><a id="chinese" href="index_zh.html">Chinese</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a id="english" href="index.html">English</a></li>
-                        <li><a id="korean" href="index_ko.html">Korean</a></li>
-                        <li><a id="chinese" href="index_zh.html">Chinese</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </header>
-    <article>
+                </li>
+            </ul>
+        </header>
         <div id="frontpage">
             <h3>
                 Break down the language barrier for your blockchain project
@@ -55,6 +55,8 @@
                 </a>
             </p>
         </div>
+    </div>
+    <article>
         <div class="selected" id="chapter1">
             <h2>Company Introduction</h2>
             <h3>
@@ -66,17 +68,19 @@
         </div>
         <div class="selected" id="chapter2">
             <h2>Our Service</h2>
-            <div class="content1">
-                <h3>Professional translation for Blockchain Technology</h3>
-                <p>Korean - Chinese - English<br>White paper, Website, Newsletter, Subtitles etc.</p>
-            </div>
-            <div class="content2">
-                <h3>
-                    Marketing Service
-                </h3>
-                <p>
-                    Weibo, Wechat Official Account, Blockchain Developers Communities, Blockchain Media<br>Reddit, Twitter, Medium etc.
-                </p>
+            <div class="container">
+                <div class="content1">
+                    <h3>Professional translation for Blockchain Technology</h3>
+                    <p>Korean - Chinese - English<br>White paper, Website, Newsletter, Subtitles etc.</p>
+                </div>
+                <div class="content2">
+                    <h3>
+                        Marketing Service
+                    </h3>
+                    <p>
+                        Weibo, Wechat Official Account, Blockchain Developers Communities, Blockchain Media<br>Reddit, Twitter, Medium etc.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="selected" id="chapter3">
