@@ -60,13 +60,13 @@ a {
     height: 1.2rem;
 }
 #english::before{
-    background-image: url(flag-us.svg);
+    background-image: url(svg/flag-us.svg);
 }
 #chinese::before{
-    background-image: url(flag-cn.svg);
+    background-image: url(svg/flag-cn.svg);
 }
 #korean::before{
-    background-image: url(flag-kr.svg);
+    background-image: url(svg/flag-kr.svg);
 }
 #lang-menu ul{
     font-size: 00.8rem;
