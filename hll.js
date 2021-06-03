@@ -1,5 +1,5 @@
 function checkWindow() {
-    if(window.innerWidth>1000){
+    if(window.innerWidth>900){
         document.querySelector('.navmenu').style.display='flex';
     }else if(document.querySelector('.navtoggle').mode==='navopen'){
         document.querySelector('.navmenu').style.display='flex';

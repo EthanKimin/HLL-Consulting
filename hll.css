@@ -38,7 +38,7 @@ a {
 }
 .title #hll{
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-left: 3rem;
 }
 .navtoggle{
@@ -51,7 +51,7 @@ a {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    width: 6rem;
+    width: 5.5rem;
 }
 .selected-lang::before{
     content: "";
@@ -108,7 +108,7 @@ a {
 
 .navmenu {
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .navsel a{
     padding: 0.2rem;
@@ -136,29 +136,41 @@ li{
     background-size: cover;
     background-position: bottom right;
 }
+#chapter1, #chapter3, #chapter2 h2{
+    padding: 0 13rem;
+}
 h2{
     padding-top: 7rem;
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
     text-align: end;
 }
 h3{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 4rem;
 }
 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
-}
-#frontpage p{
-    padding-right: 20rem;
-    /* font-weight: 300; */
 }
 #frontpage a{
     color: royalblue;
 }
 #frontpage a:hover{
     text-decoration: underline;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content{
+    margin: 2rem;
+    padding: 2rem;
+    width: 38vw;
+    height: 40rem;
+    background-color: grey;
+    border-radius: 1rem;
 }
 
 
@@ -201,7 +213,7 @@ footer i{
 
 
 
-@media (max-width:1000px) {
+@media (max-width:900px) {
     .navtoggle{
         display: block;
         position: absolute;
@@ -238,6 +250,9 @@ footer i{
     #frontpage{
         padding: 10rem 5rem 15rem 5rem;
     }
+    #chapter1, #chapter3, #chapter2 h2{
+        padding: 0 5rem;
+    }
     h2{
         padding-top: 7rem;
     }
@@ -250,6 +265,13 @@ footer i{
     #frontpage p{
         padding-right: 5rem;
     }
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        width: 80vw;
+        flex-grow: 1;
+    }
 }
 
 @media (max-width:735px) {
@@ -258,6 +280,9 @@ footer i{
     }
     #frontpage p{
         padding-right: 1rem;
+    }
+    #chapter1, #chapter3, #chapter2 h2{
+        padding: 0 1rem;
     }
     h2{
         padding-top: 10rem;
