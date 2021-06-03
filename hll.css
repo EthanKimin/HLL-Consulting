@@ -58,8 +58,15 @@ a {
     display: block;
     width: 1.6rem;
     height: 1.2rem;
+}
+#english::before{
     background-image: url(flag-us.svg);
-    /* line-height: 2; */
+}
+#chinese::before{
+    background-image: url(flag-cn.svg);
+}
+#korean::before{
+    background-image: url(flag-kr.svg);
 }
 #lang-menu ul{
     font-size: 00.8rem;
@@ -94,15 +101,6 @@ a {
 }
 #lang-menu ul li a:hover{
     background-color: whitesmoke;
-}
-.us::before{
-    background-image: url(flag-us.svg);
-}
-.kr::before{
-    background-image: url(flag-kr.svg);
-}
-.cn::before{
-    background-image: url(flag-cn.svg);
 }
 #lang-menu:hover ul,#lang-menu:focus-within ul{
     display: block;
