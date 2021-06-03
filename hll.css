@@ -31,10 +31,10 @@ a {
     position: absolute;
     top: 2rem;
     left: 2.2rem;
+    transition: transform 500ms ease;
 }
 .title:hover img{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
+    transform: scale(1.2);
 }
 .title #hll{
     font-weight: 500;
@@ -94,7 +94,6 @@ a {
 }
 #lang-menu ul li a:hover{
     background-color: whitesmoke;
-    border: none;
 }
 .us::before{
     background-image: url(flag-us.svg);
@@ -105,7 +104,7 @@ a {
 .cn::before{
     background-image: url(flag-cn.svg);
 }
-#lang-menu:hover ul{
+#lang-menu:hover ul,#lang-menu:focus-within ul{
     display: block;
 }
 
@@ -117,10 +116,10 @@ a {
     padding: 0.2rem;
     border-bottom: transparent 0.15rem solid;
     border-radius: 2px;
+    transition: 500ms ease;
 }
 .navsel a:hover, .navsel a:focus{
     border-bottom: royalblue 0.15rem solid;
-    transition: 0.8s;
 }
 ul{
     padding: 0;
