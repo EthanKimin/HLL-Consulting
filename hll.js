@@ -11,11 +11,13 @@ window.onresize = checkWindow;
             
 function navOpenClose(self){
     if(self.mode==='navopen'){
-        document.querySelector('.navmenu').style.display='flex';
-        document.querySelector('.icon-menu').className = 'icon-cancel';
-    }else{
         document.querySelector('.navmenu').style.display='none';
+        document.querySelector('.icon-menu').className = 'icon-cancel';
+        self.mode = 'navclose';
+    }else{
+        document.querySelector('.navmenu').style.display='flex';
         document.querySelector('.icon-cancel').className = 'icon-menu';
+        self.mode = 'navopen'
     }
 }
 
