@@ -103,7 +103,7 @@ a {
 #lang-menu ul li a:hover{
     background-color: whitesmoke;
 }
-#lang-menu:hover ul,#lang-menu:focus-within ul{
+#lang-menu:hover ul{
     display: block;
 }
 
@@ -200,6 +200,7 @@ p{
 }
 .c3{
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
 }
 .c3 h3{
