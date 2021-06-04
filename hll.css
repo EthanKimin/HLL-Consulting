@@ -220,17 +220,17 @@ p{
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 1rem;
-    right: 1.5rem;
+    bottom: 1.5rem;
+    right: 1rem;
     z-index: 99; /* Make sure it does not overlap */
     border: none;
     outline: none;
-    background-color: rgba(50,50,50,0.5); 
+    background-color: rgba(50,50,50,0.4); 
     color: whitesmoke; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 0.5rem; /* Some padding */
+    padding: 0.6rem; /* Some padding */
     border-radius: 0.5rem; /* Rounded corners */
-    font-size: 1rem; /* Increase font size */
+    font-size: 1.2rem; /* Increase font size */
     transition: ease 1s;
 }
 #myBtn:hover {
