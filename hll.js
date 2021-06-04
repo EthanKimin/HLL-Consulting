@@ -22,10 +22,18 @@ function navOpenClose(self){
 }
 
 function scrollChange() {
-    if(pageYOffset<5){
-        document.querySelector("#navbar").style.boxShadow ='none'
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        document.querySelector("#navbar").style.boxShadow ='0 2px 5px rgba(0, 0, 0, 0.25)';
+        document.getElementById("myBtn").style.display ="block";
     }else{
-        document.querySelector("#navbar").style.boxShadow ='0 2px 5px rgba(0, 0, 0, 0.25)'
+        document.querySelector("#navbar").style.boxShadow ='none';
+        document.getElementById("myBtn").style.display = "none"
     }
 }
+
 window.onscroll = scrollChange;
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
