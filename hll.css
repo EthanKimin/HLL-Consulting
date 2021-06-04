@@ -137,12 +137,12 @@ li{
     background-size: cover;
     background-position: bottom right;
 }
-#chapter1, #chapter3, #chapter2 h2{
-    padding: 0 13rem;
+#chapter1, #chapter3, #chapter2{
+    padding-right: 13rem;
+    padding-left: 13rem;
 }
 h2{
     padding-top: 7rem;
-    /* padding-right: 3rem; */
     text-align: end;
 }
 h3{
@@ -160,19 +160,61 @@ p{
 #frontpage a:hover{
     text-decoration: underline;
 }
+.c1{
+    padding: 11rem 0;
+}
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
-.content{
-    margin: 2rem;
-    padding: 2rem;
-    width: 38vw;
-    height: 40rem;
-    background-color: grey;
-    border-radius: 1rem;
+.content::before{
+    content: "";
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    background-size: cover;
+    flex-shrink: 0;
+    /* background-color: rgba(200,200,200,0.4); */
+    /* border-radius: 6rem; */
 }
+#content1::before{
+    background-image: url(svg/translation.svg);
+}
+#content2::before{
+    background-image: url(svg/marketing.svg);
+}
+.content{
+    margin: 3rem 0rem;
+    border-bottom: solid 0.1rem #555;
+    min-height: 17rem;
+    display: flex;
+    vertical-align: middle;
+}
+.content-string{
+    padding-left: 4rem;
+}
+.content-string h3{
+    margin: 0;
+    margin-bottom: 3rem;
+}
+.c3{
+    display: flex;
+    margin: 0;
+}
+.c3 h3{
+    width: 13rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+}
+.c3 p{
+    position: relative;
+    top: -0.5rem;
+}
+#chapter3{
+    padding-bottom: 10rem;
+}
+
 #myBtn {
     display: none;
     position: fixed;
@@ -232,7 +274,29 @@ footer i{
     padding-left: 2rem;
 }
 
-
+@media (max-width:1300px) {
+    #frontpage{
+        padding: 10rem 5rem 15rem 5rem;
+    }
+    #chapter1, #chapter3, #chapter2{
+        padding: 0 5rem;
+    }
+    h2{
+        padding-top: 7rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #frontpage p{
+        padding-right: 5rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
 
 @media (max-width:1000px) {
     .navtoggle{
@@ -267,31 +331,11 @@ footer i{
     .navmenu.active{
         display: flex;
     }
-
-    #frontpage{
-        padding: 10rem 5rem 15rem 5rem;
-    }
-    #chapter1, #chapter3, #chapter2 h2{
-        padding: 0 5rem;
-    }
-    h2{
-        padding-top: 7rem;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    p{
-        font-size: 1.5rem;
-    }
-    #frontpage p{
-        padding-right: 5rem;
-    }
-    .container{
+    .content{
         flex-direction: column;
     }
-    .content{
-        width: 80vw;
-        flex-grow: 1;
+    .content-string{
+        padding: 2rem 0;
     }
 }
 
@@ -302,7 +346,7 @@ footer i{
     #frontpage p{
         padding-right: 1rem;
     }
-    #chapter1, #chapter3, #chapter2 h2{
+    #chapter1, #chapter3, #chapter2{
         padding: 0 1rem;
     }
     h2{
