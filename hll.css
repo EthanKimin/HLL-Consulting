@@ -2,6 +2,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     color: rgb(70,70,70);
+    transition: all ease 300ms;
 }
 body {
     margin: 0;
@@ -213,7 +214,7 @@ footer i{
 
 
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
     .navtoggle{
         display: block;
         position: absolute;
