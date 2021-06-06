@@ -107,6 +107,9 @@ a {
 #lang-menu:hover ul{
     display: block;
 }
+#lang-menu:target ul{
+    display: block;
+}
 
 .navmenu {
     display: flex;
@@ -138,9 +141,6 @@ li{
     background-size: cover;
     background-position: bottom right;
 }
-#frontpage p{
-    max-width: 1000px;
-}
 #frontpage p, #frontpage h3{
     opacity: 0;
     transform: translateY(2rem);
@@ -150,9 +150,9 @@ li{
     transform: translateY(0);
     opacity: 1;
 }
-#chapter1, #chapter3, #chapter2{
-    padding-right: 13rem;
-    padding-left: 13rem;
+.selected{
+    padding: 0 19.5rem;
+    /* padding-left: 13rem; */
 }
 h2{
     padding-top: 7rem;
@@ -161,11 +161,14 @@ h2{
 h3{
     font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 4rem;
+    margin: 4rem 0;
 }
 p{
     font-size: 1.5rem;
     font-weight: 300;
+}
+#frontpage h3, #frontpage p{
+    max-width: 60rem;
 }
 #frontpage a{
     color: royalblue;
@@ -173,13 +176,20 @@ p{
 #frontpage a:hover{
     text-decoration: underline;
 }
+.selected{
+    align-items: center;
+}
 .c1{
-    padding: 11rem 0;
+    padding: 9rem 0;
     opacity: 0;
     transform: translateX(4rem);
     transition: all 1s ease-out;
-
+    text-align: end;
 }
+/* .c1 h3{
+    position: relative;
+    right: -5rem;
+} */
 .container{
     display: flex;
     flex-direction: column;
@@ -217,6 +227,7 @@ p{
     vertical-align: middle;
     transition: all 1s ease-out;
     transform: translate(-4rem);
+    /* max-width: 60rem; */
 }
 .content.pop-up{
     border-bottom: solid 0.1rem #555;
