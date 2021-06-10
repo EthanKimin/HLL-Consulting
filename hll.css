@@ -23,7 +23,7 @@ a {
     display: flex;
     justify-content: space-between;
     background-position: top right;
-    padding: 0.5rem 1.3rem;
+    padding: 0rem 1.3rem;
     align-items: center;
     z-index: 99;
 }
@@ -31,7 +31,7 @@ a {
     width: 2rem;
     height: 2rem;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     left: 2.2rem;
     transition: transform 500ms ease;
 }
@@ -200,7 +200,7 @@ p{
     opacity: 0;
     transform: translateX(4rem);
     transition: all 1s ease-out;
-    text-align: end;
+    text-align: center;
 }
 /* .c1 h3{
     position: relative;
@@ -408,20 +408,31 @@ footer i{
 
 @media (max-width:735px) {
     #frontpage{
-        padding: 12rem 1rem 20rem 1rem;
+        padding: 12rem 1.5rem 20rem 1.5rem;
     }
     #frontpage p{
         padding-right: 1rem;
     }
     #chapter1, #chapter3, #chapter2{
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
     h2{
         padding-top: 10rem;
     }
+    .content::before{
+        height: 5rem;
+        width: 5rem;
+    }
+
 }
 @media(max-width:420px){
     h2{
         padding-top: 11.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.9rem;
     }
 }
